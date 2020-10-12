@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<html>
 <!--head部分-->
 <head th:include="layout :: htmlhead" th:with="title='机房仓库管理系统'">
 </head>
-<style>
-    body{
-        background-repeat: no-repeat;
-        background-size:100% 100%;
-        background-attachment: fixed;
-    }
-</style>
+<link rel="stylesheet" href="/css/login.css"/>
+
 <body background="images\bg.jpg" >
-<div class="layui-container" style="height: 100%">
-
-    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 6%">
-        <legend style=" margin-left: 40%"><span style="font-weight: bold;font-size:22px;">机房仓库管理系统</span></legend>
-    </fieldset>
-
-    <div class="layui-row">
-        <div class="layui-col-xs3">
-            <div class="grid-demo grid-demo-bg1">
-                &nbsp;
-            </div>
+<div class="u1"  >
+<div  class="u2"  >
+    <div >
+        <div class="u2-n1">
+            <img id="u4_img" class="img " src="images\n1.png"/>
         </div>
-        <div class="layui-col-xs6">
-            <div class="grid-demo">
-                <form id="useLogin" class="layui-form" action="">
-                    <div class="layui-form-item" style="margin-left:65px">
-                        <label class="layui-form-label">用户名</label>
-                        <div class="layui-input-inline">
-                            <input id="username" name="username" lay-verify="required" autocomplete="off" class="layui-input" type="tel"/>
+        <div class="u2-n2" >
+            <div class="grid-demo" style="background-color: #00FF00;height: 100%">
+                <div class="u7">
+                    <img id="u7_img" class="img " src="images/u7.png"/>
+                </div>
+                <div class="u9">
+                    <img id="u9_img" class="img " src="images/u9.png"/>
+                </div>
+                <div id="u11" class="ax_default label">
+                    <div id="u11_div" class=""></div>
+                    <!-- Unnamed () -->
+                    <div id="u12" class="text" style="visibility: visible;">
+                        <p><span>机房仓库管理系统</span></p>
+                    </div>
+                </div>
+
+                <div style="position:absolute;z-index: 100; margin-top: 170px;margin-left:90px; ">
+                 <form id="useLogin" class="layui-form" action="">
+                    <div class="layui-form-item layui-form-item2" style="margin-left:50px; ">
+                        <div style="width: 20%;float: left;position:absolute;z-index: -1; margin-left: 3px;margin-top: 3px;">
+                            <img   class="img img1" src="images/u34.png"/>
+                            <img  class="img" src="images/u32.png"/>
+                        </div>
+                        <div class="layui-input-inline"  style="width: 80%;float: right;">
+                            <input id="username" name="username" lay-verify="required" placeholder="" autocomplete="off" class="layui-input" type="tel"/>
                         </div>
                     </div>
-                    <div class="layui-form-item" style="margin-left:65px">
-                        <label class="layui-form-label">密&nbsp;&nbsp;&nbsp;码</label>
-                        <div class="layui-input-inline">
-                            <input id="password" name="password" lay-verify="required" autocomplete="off" class="layui-input" type="password"/>
+                    <div class="layui-form-item layui-form-item2" style="margin-left:50px">
+                        <div style="width: 20%;float: left;position:absolute;z-index: -1; margin-left: 3px;margin-top: 3px;">
+                            <img   class="img img2" src="images/u41.png"/>
+                            <img   class="img" src="images/u32.png"/>
+                        </div>
+                        <div class="layui-input-inline"  style="width: 80%;float: right;">
+                            <input id="password" name="password" lay-verify="required" placeholder="" autocomplete="off" class="layui-input" type="password"/>
                         </div>
                     </div>
-                    <div class="layui-form-item" style="margin-top: -20px;margin-left:65px">
-                        <label class="layui-form-label"></label>
+                    <div class="layui-form-item" style="margin-top: -20px;margin-left:50px">
                         <div class="layui-inline">
-                            <input type="checkbox" name="rememberMe" lay-skin="primary"  title="记住我"/>
+                            <input type="checkbox" name="rememberMe" lay-skin="primary"  title="记住账号和密码" style="color:#2F4056;font-size: 12px"/>
                         </div>
                     </div>
-                    <div class="layui-form-item" style="margin-left:65px">
-                        <div class="layui-input-block">
-                            <button class="layui-btn" type="reset" style="width: 87px">重置</button>
-                            <button id="loginBtn" class="layui-btn layui-btn-danger" lay-submit="" lay-filter="login"  style="width: 87px">登录</button>
+                    <div class="layui-form-item" style="margin-left:50px;height: 35px;">
+                        <div class="">
+                            <button class="" type="reset" style="width: 90px;height: 25px;color:#FFFFFF;font-size:14px;font-family: 'Microsoft YaHei Regular', 'Microsoft YaHei';font-weight: 400;border: none;border-radius: 4px; background : linear-gradient(180deg, rgba(23, 34, 43, 1) 0%, rgba(23, 34, 43, 1) 0%, rgba(91, 95, 97, 1) 100%, rgba(91, 95, 97, 1) 100%)">重置</button>
+                            &nbsp;<button id="loginBtn" class="" lay-submit="" lay-filter="login"  style="width: 90px;height: 25px;color:#FFFFFF;font-size:14px;font-family: 'Microsoft YaHei Regular', 'Microsoft YaHei';font-weight: 400;border: none;border-radius: 4px; background: linear-gradient(180deg, rgba(5, 86, 152, 1) 0%, rgba(5, 86, 152, 1) 0%, rgba(34, 128, 208, 1) 100%, rgba(34, 128, 208, 1) 100%);">登录</button>
                         </div>
                     </div>
-                    <div class="layui-form-item" style="margin-left:200px">
-                        <a href="https://www.google.cn/chrome" style="color:#2F4056;"> 点击下载Chrome浏览器</a>
+                    <div class="layui-form-item" style="margin-left:77px;margin-top: -10px">
+                        <a href="https://www.google.cn/chrome" style="color:#666666;font-size: 12px"> 点击下载Chrome浏览器</a>
                     </div>
                 </form>
+
+                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <script type="text/javascript" src="/js/login.js"></script>
 </body>

@@ -3,84 +3,56 @@
        xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
 <body>
 <header th:fragment="header">
-    <style type="text/css">
-        *{
-            margin:0px;
-            padding:0px;
-            border:0px;
-        }
-        body{font-size:12px}
-        #news{
-            overflow:hidden;
-            height:80px;
-            width:280px;
-            margin:90px auto;
-            position:relative;
-        }
-        #news1{
-            height:auto;
-            text-align:left;
-        }
-        #news2{
-            height:auto;
-            text-align:left;
-        }
-        #news1 li{
-            list-style-type:none;
-            height:22px;
-            text-align:left;
-            text-indent:15px;
-        }
-        #news2 li{
-            list-style-type:none;
-            height:22px;
-            text-align:left;
-            text-indent:15px;
-        }
+    <link rel="stylesheet" href="/css/head.css"/>
 
-    </style>
+    <div class="layui-layout layui-layout-admin" style="left: 200px;border-style: solid; ">
+        <div class="layui-header"  style="background-color: white;border-style: solid;border-bottom-color:	#404040;border-bottom-width: 1px;">
+            <div class="title1" style="width:200px;height:60px;float:left; margin-top:0px; ">
+                <a href="javascript:;" class="layui-hide-xs"><a href="/home"><div class="layui-logo2">机房仓库管理系统&nbsp;
+                </div></a>
+                </a>
+            </div>
 
-    <div class="layui-layout layui-layout-admin">
-        <div class="layui-header">
-            <a href="javascript:;" class="layui-hide-xs"><a href="/home" style="font-weight: bold;"><div class="layui-logo">机房仓库管理系统&nbsp;<span class="layui-icon layui-icon-app"></span></div></a>
-            </a>
-            <a href="javascript:;" class="layui-hide-xs">
-                <div class="switchMenu" style="display: none;"><i class="fa fa-indent"></i></div>
-            </a>
+            <div  style=" float:left;">
+                <img id="u132_img" class="img " src="/images/u132.png"  onclick="javascript:location.href='/home'" />
+            </div>
 
-            <div id="msgInfo" style="width:30px;height:60px;float:right;margin-right: 240px;margin-top:0px;">
-                <div style="margin-top:5px;position:absolute;z-index:2;">
+            <div id="msgInfo" style="width:30px;height:60px;float:right;margin-right: 220px;margin-top:0px;">
+                <div style="margin-top:10px;position:absolute;z-index:2;">
                     <span id="msgNum" style="color: red;font-weight: bold;font-size: 15px;margin-top: 5px;"></span>
                 </div>
-                <div style="margin-top:15px;position:absolute;z-index:1;">
-                    <img src="/images/msg.jpg"  id="newpic" class="layui-nav-img" style="width:30px;height:30px;"></img>
+                <div style="margin-top:20px;position:absolute;z-index:1;  width:22px;">
+                    <img  src="/images/u116.png"  id="newpic" class="layui-nav-img" style="width:22px;height:22px; cursor:pointer;"/>
                 </div>
             </div>
 
-            <div id="news" style="width:350px;height:40px;float:right;margin-right:0 ;margin-top:10px;">
+            <div id="news" style="width:350px;height:20px;float:right;margin-right:0 ;margin-top:22px;">
                 <ul id="news1" >
                 </ul>
                 <ul id="news2" style="background-color: #00FF00"></ul>
             </div>
 
-
-
             <ul class="layui-nav layui-layout-right" >
 
                 <li class="layui-nav-item">
                     <a href="javascript:;">
-                        <img src="/images/logo.jpg" class="layui-nav-img"></img>
-                        <shiro:principal property="sysUserName"></shiro:principal>
+                        <img src="/images/u114.png" class="layui-nav-img" style="width:22px;height:22px; cursor:pointer;"/>
+
+                       <span style="color: #333333;font-size: 12px"> <shiro:principal property="userName"></shiro:principal>&nbsp;</span>
+                        <img src="/images/u122.png" class="" style="width:10px;height:9px; cursor:pointer;"/>
                     </a>
                     <dl class="layui-nav-child">
                         <dd id="updUsePwdDd" class="layui-this"><a href="javascript:;" onclick="updateUsePwd();">修改密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="/logout" class="layui-icon layui-icon-logout">退出</a></li>
+                <li class="layui-nav-item">
+                    <img src="/images/u118.png" class="" onclick="javascript:location.href='/logout'" style="width:20px;height:20px; cursor:pointer;" />
+                    <span style="color: #333333;font-size: 12px;cursor:pointer;" onclick="javascript:location.href='/logout'">退出</span>
+                </li>
             </ul>
         </div>
 
-        <div class="layui-side layui-bg-black">
+        <div class="layui-side" style="margin-top: 0">
             <div class="layui-side-scroll">
                 <ul class="layui-nav layui-nav-tree"  lay-filter="test">
 

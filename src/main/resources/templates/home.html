@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <!--head部分-->
-<head th:include="layout :: htmlhead" th:with="title='机房仓库管理'">
-</head>
-<body class="layui-layout-body layui-bg-gray" background="images\home.jpg" style="background-size:100% 500%">
-<!--<body class="layui-layout-body layui-bg-gray" >-->
+<head th:include="layout :: htmlhead" th:with="title='机房仓库管理'"></head>
+<link rel="stylesheet" href="/css/home.css"/>
+
+<body class="layui-layout-body layui-bg-gray"  >
 <div class="layui-layout layui-layout-admin" >
     <!--头-->
     <div th:replace="fragments/head :: header"></div>
 
     <!--主体区域-->
-    <div class="layui-body" >
-        <div class="layui-container">
-            <div class="layui-row">
-                <div class="layui-col-xs9">
-                    &nbsp;
-                    <h1 style="padding-top:20px;line-height:2.0;color:rgb(240,240,240)"><br/>
-                        <!--<shiro:principal property="sysUserName"></shiro:principal>-->
-                        <shiro:principal property="userName"></shiro:principal>，欢迎您登录
-                        <span style="font-weight: bold;font-size:28px;color:rgb(240,240,240)">机房仓库管理系统</span></a></h1>
+    <div class="layui-body"  style="height:89%;width:84.2%;margin-top: 2px;margin-left: 8px">
+                <div>
+                    <img id="u136_img" class="img " src="images/u136.png">
+                    <img id="u138_img" class="img "  src="images/u138.png">
                 </div>
-            </div>
-        </div>
     </div>
     <script type="text/javascript" src="/js/error.js"></script>
-    <!--底部-->
+
     <div th:replace="fragments/footer :: footer"></div>
 </div>
 </body>

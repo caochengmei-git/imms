@@ -1,0 +1,89 @@
+body{
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+.u1{
+    height: 513px;margin-top: 70px;;
+}
+.u2{
+    height: 513px;width: 90%;margin:auto; background-image: url("/images/u2.jpg");
+}
+.u2-n1{
+    width:50%;
+    height:100%;
+    float:left;
+}
+.u2-n2{
+    width:50%;
+    height:100%;
+    background-color:#aaa;
+    float:right;
+}
+#u4_img{
+    position: absolute;
+    left: 230px;
+    top: 130px;
+    width: 416px;
+    height: 387px;
+}
+#u7_img {
+    position: absolute;
+    left: 750px;
+    top: 150px;
+    width: 322px;
+    height: 322px;
+}
+#u9_img {
+    position: absolute;
+    left: 752px;
+    top: 152px;
+    width: 318px;
+    height: 315px;
+}
+#u11 {
+    position: absolute;
+    left: 794px;
+    top: 176px;
+    width: 214px;
+    height: 50px;
+    font-family: '腾祥嘉丽大黑简 Bold', '腾祥嘉丽大黑简';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: #4C91F0;
+    text-align: center;
+}
+#u12 {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 214px;
+    word-wrap: break-word;
+}
+.layui-input{
+    height: 30px;
+}
+.layui-btn{
+    height: 30px;
+}
+.layui-form-item2{
+    height: 30px;
+    background: url("/images/u25.jpg");
+    border-radius: 5px; border-style: solid; border-width: 2px;border-bottom-color :#FFFFFF;border-top-color:	#B0B0B0;border-right-color:#B0B0B0;border-left-color:#B0B0B0;
+}
+.layui-input{
+    background-color: transparent;
+    border: none;
+}
+.img1 {
+    width: 20px;
+    height: 20px;
+}
+.img2 {
+    width: 20px;
+    height: 18px;
+}
+.layui-form-checkbox span{
+    font-size: 12px;
+}

@@ -1,0 +1,17 @@
+#u136_img {
+    position: absolute;
+    left: 640px;
+    top: 420px;
+    width: 186px;
+    height: 58px;
+}
+#u138_img {
+    position: absolute;
+    left: 470px;
+    top: 480px;
+    width: 496px;
+    height: 72px;
+}
+.layui-body{
+    background: url("/images/home.jpg");background-size:100% 100%
+}

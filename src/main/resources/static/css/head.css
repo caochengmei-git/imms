@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+body{font-size:12px}
+#news{
+    overflow:hidden;
+    height:80px;
+    width:280px;
+    margin:90px auto;
+    position:relative;
+}
+#news1{
+    height:auto;
+    text-align:left;
+}
+#news2{
+    height:auto;
+    text-align:left;
+}
+#news1 li{
+    list-style-type:none;
+    height:22px;
+    text-align:left;
+    text-indent:15px;
+}
+#news2 li{
+    list-style-type:none;
+    height:22px;
+    text-align:left;
+    text-indent:15px;
+}
+
+#u132_img {
+    position: absolute;
+    left: 216px;
+    top: 15px;
+    width: 26px;
+    height: 30px;
+    cursor:pointer;
+}
+.layui-logo2{
+    font-family: 'Arial Negreta', 'Arial';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    text-align: center;
+}
+.layui-side-scroll{
+    background: linear-gradient(180deg, rgba(76, 144, 241, 1) 0%, rgba(76, 144, 241, 1) 0%, rgba(40, 71, 158, 1) 100%, rgba(40, 71, 158, 1) 100%);
+}
+.layui-nav-tree {
+    background: transparent;
+}
+.title1{
+    background: linear-gradient(180deg, rgba(76, 144, 241, 1) 100%, rgba(76, 144, 241, 1) 0%, rgba(40, 71, 158, 1) 100%, rgba(40, 71, 158, 1) 100%);
+}
+.layui-nav-tree .layui-nav-item a:hover {
+    color: rgb(76,145,240);
+    background-color: 	#E0E0E0;
+}
+/*        .layui-nav-child :hover {
+            background-color: 	#ffffff;color: rgb(76,145,240);
+        }*/
+.layui-nav-tree  .layui-this, .layui-nav-tree  .layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this > a, .layui-nav-tree .layui-this > a:hover {
+    color: rgb(76,145,240);
+    background-color: 	#ffffff;
+}
